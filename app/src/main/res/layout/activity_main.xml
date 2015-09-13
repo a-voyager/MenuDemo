@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.voyager.ui.SlidingMenu
+        android:id="@+id/sm_view_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        my:menu_padding="100dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <include layout="@layout/left_menu"></include>
+
+            <include layout="@layout/main"></include>
+
+
+        </LinearLayout>
+
+    </com.voyager.ui.SlidingMenu>
+
+</RelativeLayout>
